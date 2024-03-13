@@ -1,0 +1,266 @@
+
+.home-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+  
+  .header-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 15vh;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+  
+    background: linear-gradient(
+      90deg,
+      #000000 0%,
+      #000000 30%,
+      #2a2a2a 70%,
+      #2a2a2a 100%
+    );
+  }
+  
+  .nav-home {
+    display: flex;
+    justify-content: space-evenly; /* Ajusta el espacio entre los elementos */
+    align-items: center;
+    padding-right: 20px; /* Espacio a la derecha para el botón */
+    flex-grow: 1;
+  }
+  
+  .nav-home a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 5px; /* Agregado espacio a los lados del enlace */
+    font-size: 1.5em;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+  }
+  
+  .header-home .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+  }
+  
+  .nav-home {
+    display: flex;
+    justify-content: space-evenly; /* Ajusta el espacio entre los elementos */
+    align-items: center;
+    padding-right: 0px; /* Espacio a la derecha para el botón */
+    flex-grow: 1;
+  }
+  
+  .nav-home a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 5px; /* Agregado espacio a los lados del enlace */
+    font-size: 1.5em;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+  }
+  
+  .nav-home a:hover {
+    background-color: #333;
+  }
+  .home-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+  .dropdown-home {
+    position: relative;
+  }
+  
+  .dropdown-content-home {
+    opacity: 0; /* Inicialmente establecer la opacidad en 0 */
+    pointer-events: none; /* Asegurar que no sea clickeable cuando no es visible */
+    transition: opacity 0.3s ease-in-out; /* Agregar transición de opacidad */
+    display: block; /* Cambiado de none a block para que la animación funcione */
+    position: absolute;
+    background-color: #333; /* Fondo del menú desplegable */
+    box-shadow: 0px 0px 6px 0px rgb(0, 0, 0);
+    z-index: 1;
+    font-size: 0.7em;
+    margin-top: 7%; /* Agregado espacio en la parte superior */
+    border-radius: 20px;
+    width: 230%;
+  }
+  
+  .dropdown-content-home a {
+    color: white;
+    padding: 12px 40px;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+  }
+  
+  .dropdown-content-home a:hover {
+    color: white;
+    background-color: #555; /* Fondo de la opción al pasar el mouse */
+  }
+  
+  .dropdown-home:hover .dropdown-content-home {
+    opacity: 1; /* Cambiar la opacidad a 1 al pasar el mouse */
+    pointer-events: auto; /* Asegurar que sea clickeable cuando es visible */
+  }
+  
+  .boton-home {
+    background: black;
+    border-radius: 50px; /* Ajusta este valor según tus preferencias */
+    color: white;
+    text-decoration: none;
+    left: 100px;
+    margin: 100px;
+  }
+  
+  .boton-pro {
+    position: relative;
+    margin-right: 2%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background: black;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    left: 100px;
+  }
+  
+  @media only screen and (max-width: 1140px) {
+    .boton-home{
+      left: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 1255px) {
+    .boton-pro{
+      left: 10px;
+    }
+  }
+  
+  .opcionespro {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #333;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  
+  .boton-pro:hover .opcionespro {
+    display: block;
+    
+  }
+  
+  .opcionespro a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .opcionespro button {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background: red;
+  }
+  
+  .opcionespro a:hover {
+    background: #555;
+    border-radius: 10px;
+  }
+  /*880*/
+  @media only screen and (max-width: 903px) {
+    .header-home .nav-btn {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    .header-home .nav-home {
+      position: fixed;
+      top: -150vh;
+      left: 0;
+      height: 101%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background: linear-gradient(
+        180deg,
+        #000000 0%,
+        #000000 30%,
+        #2a2a2a 70%,
+        #2a2a2a 100%
+      );
+      transition: 1s;
+    }
+  
+    .header-home .responsive_nav {
+      transform: translateY(150vh);
+    }
+  
+    .nav-home .nav-close-btn {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+  
+    .nav-home a {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .nav-btn {
+      position: flex;
+      width: 100px;
+    }
+    .dropdown-home{
+      font-size: 10px;
+    }
+    .dropdown-content-home {
+      width: 80vw;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      transition: .2s ease-in-out;
+      opacity: 0;
+    }
+    .dropdown-home:hover .dropdown-content-home {
+      opacity: 1; /* Cambiar la opacidad a 1 al pasar el mouse */
+      pointer-events: auto; /* Asegurar que sea clickeable cuando es visible */
+      margin-top: 0%;
+  
+    }
+    .boton-home {
+      left: 0px;
+    }
+  }
+  
